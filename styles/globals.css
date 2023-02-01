@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+  .line_grad{
+   background: linear-gradient(173.44deg, #FFFFFF -44.27%, rgba(255, 255, 255, 0) 97.29%, rgba(255, 255, 255, 0) 97.29%);
+
+  }
+
+  .single_marketing{
+    position: relative;
+ 
+      
+      
+      background: linear-gradient(160.4deg, #4E6CF6 13.13%, #EA2382 116.14%) 1;
+    
+    }
+
+    .single_marketing:hover p{
+     
+      font-size: 5vw;
+      font-weight:medium;
+      width:100%;
+
+    }
+
+    .single_marketing_seo:hover p{
+     
+      font-size: 3.5vw;
+      width:100%;
+
+    }
+
+    .single_marketing:hover p:hover{
+      font-weight: bold;
+      background:linear-gradient(160deg,#ff50a4 ,#486aff); 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+    }
+
+    
+
+
+    .single_marketing::after{
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 100vw; 
+      padding: 10px; 
+      background:linear-gradient(90deg,#EA2382 ,#4E6CF6); 
+      -webkit-mask: 
+         linear-gradient(#fff 0 0) content-box, 
+         linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+              mask-composite: exclude
+    }
+
+    .inner_market{
+      background: linear-gradient(160.4deg, #4E6CF6 13.13%, #EA2382 116.14%) ;
+      opacity: 0;
+      transition: 0.5s ease;
+    }
+
+    .inner_market:hover{
+      background: linear-gradient(160.4deg, #4E6CF6 13.13%, #EA2382 116.14%) ;
+      opacity: 1;
+      
+    }
+
+    .t_shadow{
+
+      text-shadow: rgb(74, 116, 255) 1px 0 10px;
+    }
+
+    .w_shadow{
+
+      text-shadow: rgb(255, 255, 255) 1px 0 10px;
+    }
+
+
+    .service_board{
+      background: linear-gradient(157.21deg, #424242 20.89%, rgba(33, 33, 33, 1) 100%);
+filter: drop-shadow(2.24484px 6.73452px 10.1018px rgba(0, 0, 0, 0.25));
+    }
+
+ 
+
+@media  (min-width:769px) {
+  .single_marketing:hover p{
+     
+    font-size: 4.2vw;
+    width:90%;
+    min-width:50%;
+
+  }
+}
+
+  
+
+}
+
+
+@layer base{
+  body{
+    background-color: #1F1F1F;
+  }
+
+  
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Montserrat, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+
+}
