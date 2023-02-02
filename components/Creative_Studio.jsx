@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 // import poster2 from "/assets/POSTER-2.jpg";
 // import poster3 from "/assets/POSTER-3.jpg";
@@ -23,7 +24,7 @@ const Creative_Studio = () => {
                 
                 <div className=' w-full relative h-auto mt-5 md:relative md:w-[70%] md:mt-[20vw]  '>
  
-                      <img src={"/assets/GROUP 24.png"} className="relative w-[65%] mx-auto z-10 md:w-[80%] overflow-hidden" ></img>
+                      <img src={"/assets/GROUP 24.png"} alt="image could not be found" className="relative w-[65%] mx-auto z-10 md:w-[80%] overflow-hidden" ></img>
                       <div className='absolute bottom-[10vw] w-[full]   h-[10px] md:right-[0%] md:w-[195%] duration-500'>
                             <div className='w-full h-[3vw] bg-[#FFA318] md:h-[1.8vw] '></div>
                             <div className='w-full h-[3vw] bg-[#FFA318] mt-[1vw] md:h-[1.8vw]'></div> 
