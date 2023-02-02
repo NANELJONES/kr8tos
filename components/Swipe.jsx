@@ -305,7 +305,7 @@ const breakpoints ={
                           
 
 
-                          <h2 className='absolute font-medium bottom-[10vw] md:bottom-[4vw]   w-[60%] left-[6vw]  md:left-[2.5vw]   text-[4.5vw]   h-auto w-auto max-w-[70%] bottom-[5vw]  left-[1.5vw]        md:text-[2vw]    '>{each_service.title}</h2>
+                          <h2 className='absolute font-medium bottom-[10vw] md:bottom-[4vw]   w-[60%] left-[6.3vw]  md:left-[2.5vw]   text-[4.5vw]   h-auto w-auto max-w-[70%] bottom-[5vw]  left-[1.5vw]        md:text-[2vw]    '>{each_service.title}</h2>
             
                           </div>
                   {isActive    

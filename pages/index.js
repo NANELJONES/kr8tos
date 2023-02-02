@@ -25,12 +25,29 @@ export default function Home() {
 
 
     
-      <Header/>
-       <Creative_Studio />
-       <Software/>
-       <Digital_Marketing/>
+      <Header />
+      <div id="creative_studio">
+          <Creative_Studio  />
+      </div>
+       
+       <div id="software">
+          <Software/>
+       </div>
+       
+
+    <div id="marketing">
+    <Digital_Marketing/>
+
+
+    </div>
+      
+
+
        <Projects/>
-       <Contact id="contact"/>  
+       <div id="contact">
+       <Contact />  
+       </div>
+       
     
     </div>
   )

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { useRouter } from 'next/router';
 import { storage } from '../../firebase/firebase';
 import {ref,listAll,getDownloadURL} from "firebase/storage"
@@ -13,11 +13,10 @@ import { useRef } from 'react';
 
 
 const Portfolio = () => {
-  const vid_ref = useRef("")
-    
-
+    const vid_ref = useRef("")
 
     const [all_images, setall_images] = useState([])
+   
     const [desc, set_desc] = useState("We design and brand your ideas, company and vision by creating a cohesive visual language to better visualize your products, concepts and ideas. We create these designs to appeal what you want to sell to your target audience. Our team of talented Digital , Traditional and Artificial Intelligence Artists create all forms of artworks and illustrations which best suits your interest.")
     const routes =  useRouter()
     const new_path =  routes.query.slug
@@ -30,6 +29,26 @@ const Portfolio = () => {
       if(typeof url !== 'string') return false;
       return(url.match(/^http[^\?]*.(jpg|jpeg|gif|png|tiff|bmp)(\?(.*))?$/gmi) != null);
   }
+
+  const [scroll_position, setscroll_position] = useState()
+
+  const handle_scroll=(event)=>{
+
+    setscroll_position(window.scrollY)
+
+  }
+
+
+
+  useEffect(() => {
+    handle_scroll
+    window.addEventListener("scroll",handle_scroll );
+  
+    return () => {
+      window.removeEventListener("scroll",handle_scroll)
+    }
+  }, [])
+  
  
    useEffect(()=>{
     setall_images([])
@@ -84,11 +103,11 @@ desc:"As a company, we provide multimedia Production services like Photography, 
       setmodal( {...modal, show_modal:!modal.show_modal} )
     }
 
-  
+
 
   return (
     
-    <div className='h-[105vh]'
+    <div className='h-auto min-h-[110vh] relative '
     style={{
       backgroundImage: `url(/bg.png)`,
       backgroundSize: 'cover',
@@ -97,13 +116,11 @@ desc:"As a company, we provide multimedia Production services like Photography, 
       
     }}
     > 
-    {modal.show_modal ? <Modal url={modal.url} onClick={()=>{setmodal( {...modal, show_modal:!modal.show_modal} )}} /> : null} 
+
+    {modal.show_modal ? <Modal url={modal.url} scroll_position={scroll_position}  onClick={()=>{setmodal( {...modal, show_modal:!modal.show_modal} )}} /> : null} 
    
 
-            <div className='font-Montserrat pt-[2vw]  mx-auto text-white flex items-center gap-[3vw] flex-wrap justify-evenly w-full md:w-[80%] lg:w-[60%]'
-            
-            
-            >
+            <div className='font-Montserrat pt-[2vw]  mx-auto text-white flex items-center gap-[3vw] flex-wrap justify-evenly w-full md:w-[80%] lg:w-[60%]' >
                   {var_btns.map((each_btn)=>{
                               return(
 
@@ -117,21 +134,25 @@ desc:"As a company, we provide multimedia Production services like Photography, 
                   <div className='w-full flex items-center justify-evenly'>
                   <button className=' text-[2vw] font-Montserrat font-thin text-white text-center  bg-k_red font-thin px-[4vw] py-[2vw] md:text-[0.7vw] md:px-[3em] md:py-[1em] hover:bg-[orange] hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-bold '> HIRE US {">>"} </button>
                   </div>
-                  
+             
          
           <div className=' mt-[3vw]  flex items-baseline flex-wrap gap-[1vw] h-auto  border-white md:w-auto mx-auto'> 
 
               {all_images && all_images.map((each_image)=>{
                   return(
                     <div  onClick={()=>
-                      {setmodal( {...modal, show_modal:!modal.show_modal, url:each_image} )}
+                      {setmodal( {...modal, show_modal:!modal.show_modal, url:each_image} )
+                      
+                    }
+                     
+                
                     
                     }  
                        key={uuidv4()} 
                    
-                    className="relative text-white w-[30%] h-[40vw] cursor-pointer mx-auto  hover:scale-125 hover:z-[1000] duration-300  md:w-[30%] md:h-[40vw]  object-cover  max-h-[300px] max-w-[200px] ">
+                    className="relative text-white w-[30%] h-[40vw] cursor-pointer mx-auto  hover:scale-125 hover:z-[10] duration-300  md:w-[30%] md:h-[40vw]  object-cover  max-h-[300px] max-w-[200px] ">
                       
-                        {isImgLink(each_image) ? <Image  optimized  src={each_image} className="object-cover " fill   alt="image could not be found" /> : <video onClick={(e)=>{ vid_ref.pause}} ref={vid_ref} muted autoPlay={true} className="w-full  h-full object-cover"  controls src={each_image}/>}
+                        {isImgLink(each_image) ? <Image  optimized loader={lazy} src={each_image} className="object-cover " fill   alt="image could not be found" /> : <video onClick={(e)=>{ vid_ref.pause}} ref={vid_ref} muted autoPlay={true} className="w-full  h-full object-cover"  controls src={each_image}/>}
                       
                     </div>
 

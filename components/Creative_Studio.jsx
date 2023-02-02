@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRef } from 'react';
 //import group_img from "/assets/pack.png"
 
 
@@ -8,8 +9,9 @@ const Creative_Studio = () => {
 
 
 
+
   return (
-    <div className='mt-10 flex flex-col h-auto mx-auto   '>
+    <div className='mt-10 flex flex-col h-auto mx-auto   ' >
       <div className='relative md:flex md:w-full'>
                 <div className='flex w-full flex-col text-white md:w-2/3 ' >
                           <h4 className='font-Montserrat font-bold tracking-[2vw] text-[5vw] md:text-[1.5vw] md:tracking-[1vw]' >CREATIVE</h4>
@@ -20,7 +22,7 @@ const Creative_Studio = () => {
 
                 
                 <div className=' w-full relative h-auto mt-5 md:relative md:w-[70%] md:mt-[20vw]  '>
-                      <div className="h-[70vw]   md:h-[50vw] relative w-[65%]  mx-auto z-10 md:w-[80%] overflow-hidden  " >
+                      <div className="h-[100vw]   md:h-[50vw] relative w-[65%]  mx-auto z-10 md:w-[80%] overflow-hidden  " >
                              <Image fill={true} unoptimized className="object-contain md:hover:scale-105 font-Montserrat  duration-300 md:hover:object-cover" 
                              src={"/assets/total.png"}
                               alt={"KR8TOS"}  />
