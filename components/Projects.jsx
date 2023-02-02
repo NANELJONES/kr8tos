@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image';
 
 
+
 const Projects = () => {
 
     const new_array =()=>{
@@ -39,7 +40,7 @@ const Projects = () => {
             {sci_image.map((each) =>{
 
             return(
-            <div key={each} className="relative w-[20vw] h-[25vw] max-w-[300px] max-h-[350px]">
+            <div key={each} className="hover:scale-110 duration-300 relative w-[20vw] h-[25vw] max-w-[300px] max-h-[350px]">
                      <Image src={each} optimized fill className="object-cover "  />
                  
 
