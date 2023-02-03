@@ -9,6 +9,7 @@ import Swipe from '../components/Swipe';
 import Digital_Marketing from '../components/Digital_Marketing'
 import Projects from '../components/Projects'
 import Contact from '../components/Contact'
+import { Service_Swipe } from '../components/Service_Swipe'
 
 
 
@@ -36,16 +37,18 @@ export default function Home() {
        
 
     <div id="marketing">
-    <Digital_Marketing/>
-
-
+             <Digital_Marketing/>
     </div>
       
 
-
+    <Service_Swipe/>
        <Projects/>
+
+   
+
+
        <div id="contact">
-       <Contact />  
+             <Contact />  
        </div>
        
     

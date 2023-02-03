@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from 'next/image';
-// import u from "/assets/pack.svg";
-// import samplebg from "/assets/samplebg.png";
-import { Service_Swipe } from './Swipe';
+
+
 import { FaBeer } from 'react-icons/fa';
+
 
 const Digital_Marketing = () => {
   return (
     <div className=' text-white font-Montserrat mt-[10vw] md:mt-[1vw]  '>
+     
    
    
    
@@ -190,32 +191,6 @@ const Digital_Marketing = () => {
         <div className='w-full h-[3vw] md:h-[1.3vw] bg-white mt-[4vw] '></div> 
 
         </div>
-
-        {/*OUR SERCIES */}
-        <div className='mt-[7vw]'>
-                <p className='text-center text-[3vw] md:text-[1.5vw] w-[80%] mx-auto duration-200 hover:text-[orange] hover:tracking-[.4em]  font-light'>OUR </p>
-                <p className='text-center text-[6vw] md:text-[2.4vw] duration-500 hover:text-[orange]   hover:tracking-[.5em]  w-[80%] mx-auto font-bold'>SERVICES </p>
-                <Service_Swipe/>
-
-                <div className='w-full flex items-center justify-evenly'>
-                <button className=' text-[2.5vw] text-[black] mt-[2vw] mx-auto  bg-white px-[4vw] py-[2vw] md:text-[1vw] md:px-[2em] md:py-[1em] hover:bg-pink hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-medium '> HIRE US {">>"} </button>
-       
-
-                </div>
-              
-        
-      
-      
-      
-      
-        </div>
-              
-
-     
-
-
-        
-
 
 
     

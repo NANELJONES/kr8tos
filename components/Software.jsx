@@ -1,5 +1,6 @@
 import React from 'react';
 import Swipe from './Swipe';
+
 import {Swiper, SwiperSlide,} from "swiper/react";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
@@ -8,11 +9,7 @@ import { useRef } from 'react';
 import 'swiper/css/autoplay';
 import ModelViewer from './ModelViewer';
 import "swiper/css/effect-coverflow";
-
-
-
-
-
+import {v4 as uuidv4} from "uuid";
 import { Autoplay,Navigation,Pagination,} from 'swiper';
 
 
@@ -26,6 +23,9 @@ import { Autoplay,Navigation,Pagination,} from 'swiper';
 
 
 const Software = () => {
+
+
+
 
   const software_services=["WEB DEVELOPMENT","APP DEVELOPMENT", "UX/UI DEVELOPMENT", "DATABASE MANAGEMENT", "DATA SCIENCE", "ARTIFICIAL INTELLIGENCE", "NETWORKING", "NETWORKING", "BACKEND ENGINEERING"]
   return (
@@ -55,7 +55,7 @@ const Software = () => {
         </div>
 
         <div>
-          <Swipe/>
+         <Swipe/> 
         </div>
 
 
@@ -80,8 +80,8 @@ const Software = () => {
                 >
           {software_services.map((each_service, i )=>{
             return(
-            <SwiperSlide>
-              <li id={i} className="flex items-center justify-between text-center  border-[white] h-full text-[3vw] hover:font-extralight hover:text-[5vw] duration-300"  ><p  className='text font-Montserrat  font-regular align-center text-white text-[.8em]  w-full'> {each_service}</p></li></SwiperSlide> 
+            <SwiperSlide key={uuidv4()} >
+              <li className="flex items-center justify-between text-center  border-[white] h-full text-[3vw] hover:font-extralight hover:text-[5vw] duration-300"  ><p  className='text font-Montserrat  font-regular align-center text-white text-[.8em]  w-full'> {each_service}</p></li></SwiperSlide> 
             ) })}
         </Swiper>
         </div>
