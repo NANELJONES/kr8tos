@@ -18,7 +18,7 @@ import { useState,useEffect } from 'react'
 
 export default function Home() {
 
-  const  [loading, setloading] = useState(false)
+  const  [loading, setloading] = useState(true)
 
 
 
