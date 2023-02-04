@@ -1,8 +1,9 @@
 import React from 'react'
 
 import Image from 'next/image';
-import { useRef } from 'react';
+import { useRef,useState } from 'react';
 const Contact = () => {
+    const [text, setText] = useState('Please Enter Your Message');
 
     
   return (
@@ -44,7 +45,12 @@ const Contact = () => {
 
             <div className='flex flex-col  gap-[1vw]'>
                 <label  className='font-light text-[3.5vw] md:text-[1.5vw] '>Message</label>
-                <textarea rows="6" className='bg-[transparent] border rounded-[3vw] p-[1.3vw]' > </textarea>
+                <textarea  
+                defaultValue={""}
+               
+                rows="6" 
+                className='bg-[transparent] border rounded-[3vw] p-[1.3vw]' >
+                </textarea>
 
             </div>
 

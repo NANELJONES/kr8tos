@@ -23,7 +23,7 @@ const Creative_Studio = () => {
                 
                 <div className=' w-full relative h-auto mt-5 md:relative md:w-[70%] md:mt-[20vw]  '>
                       <div className="h-[100vw]   md:h-[50vw] relative w-[65%]  mx-auto z-10 md:w-[80%] overflow-hidden  " >
-                             <Image fill={true} unoptimized className="object-contain md:hover:scale-105 font-Montserrat  duration-300 md:hover:object-cover" 
+                             <Image fill unoptimized className="object-contain md:hover:scale-105 font-Montserrat  duration-300 md:hover:object-cover" 
                              src={"/assets/total.png"}
                               alt={"KR8TOS"}  />
                       </div>

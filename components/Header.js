@@ -23,7 +23,7 @@ const Header = () => {
                 <p className='text-white font-Montserrat font-extralight w-4/5 text-[3vw] text-center hover:leading-[7vw]   md:hover:leading-[4vw] duration-300  font-light leading-[2em] md:text-[1.5vw] md:w-1/2 '>We are an international multi-faceted
                  Creative Studios ,Digital Marketing and a Software Development Company geared at delivering high-end Digital Services to bridge the
                   gap between Creative Content, Software and Marketing for your ideas, Products, Businesses and Services .</p>
-                <button className='text-[2.5vw] bg-white px-[3vw] py-[2vw] md:text-[1vw] md:px-[2em] md:py-[1em] hover:bg-pink hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-bold '> HIRE US {">>"} </button>
+                <button className='text-[2.5vw] bg-pink text-white md:font-bold px-[3vw] py-[2vw] md:text-[1vw] md:px-[2em] md:py-[1em] md:hover:bg-pink md:hover:text-white md:hover:px-[3.2em] md:hover:py-[1.2em] md:hover:text-1.5xl duration-500 md:hover:font-bold '> HIRE US {">>"} </button>
                
          
           </div>

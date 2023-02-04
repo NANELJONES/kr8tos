@@ -40,8 +40,8 @@ const Software = () => {
             <div className='md:w-1/2 md:text-left'>
                     <h2 className='text-white font-Montserrat text-[2vw] font-light '>{"<"}SOFTWARE{"/>"}</h2>
                     <h2 className=' md:w-full md:text-[5vw] font-extrabold '>DEVELOPMENT</h2>
-                    <p className='text-[3vw] text-center font-Montserrat  font-light hover:leading-[6vw] hover:tracking-[.01em] duration-300 w-[80%] mx-auto text-center  leading-[10vw]   md:text-[2vw] md:w-full md:tracking-[.02em] md:leading-[4vw] md:text-left '>We develop highly optimized and maintainable solutions that match our clients' business goals, utilizing the recent technologies, processes, tools, and best of Engineers, Programmers and Developers to the fullest extent possible. </p>  
-                    <button className='text-[2.5vw] text-center  bg-s_red font-thin px-[4vw] py-[2vw] md:text-[1.3vw] md:px-[2em] md:py-[1em] hover:bg-[orange] hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-bold '> HIRE US {">>"} </button>
+                    <p className='text-[3vw] text-center font-Montserrat  font-light md:hover:leading-[6vw] hover:tracking-[.01em] duration-300 w-[80%] mx-auto text-center  leading-[10vw]   md:text-[2vw] md:w-full md:tracking-[.02em] md:leading-[4vw] md:text-left '>We develop highly optimized and maintainable solutions that match our clients' business goals, utilizing the recent technologies, processes, tools, and best of Engineers, Programmers and Developers to the fullest extent possible. </p>  
+                    <button className='text-[2.5vw] text-center  bg-s_red sm:font-bold px-[4vw] py-[2vw] md:text-[1.3vw] md:px-[2em] md:py-[1em] hover:bg-[orange] hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-bold '> HIRE US {">>"} </button>
                 
 
             </div>
