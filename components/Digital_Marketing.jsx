@@ -45,9 +45,6 @@ const Digital_Marketing = () => {
                         </div>
                     </div>        
 
-
-
-
         </div>
 
 

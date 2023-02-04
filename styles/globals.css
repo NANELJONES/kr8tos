@@ -4,6 +4,8 @@
 
 @layer utilities{
 
+  
+
   .loader  {
     animation: rotate 1s infinite;  
     height: 10vw;
@@ -76,31 +78,6 @@
       margin-top: 0;
     }
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
