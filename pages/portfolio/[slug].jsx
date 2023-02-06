@@ -160,7 +160,7 @@ desc:"As a company, we provide multimedia Production services like Photography, 
                    
                     className="relative text-white w-[30%] h-[40vw] cursor-pointer mx-auto  hover:scale-125 hover:z-[10] duration-300  md:w-[30%] md:h-[40vw]  object-cover  max-h-[300px] max-w-[200px] ">
                       
-                        {isImgLink(each_image) ? <Image  optimized  src={each_image} className="object-cover " fill   alt="image could not be found" /> : <video onClick={(e)=>{ vid_ref.pause}} ref={vid_ref} muted autoPlay={true} className="w-full  h-full object-cover"  controls src={each_image}/>}
+                        {isImgLink(each_image) ? <Image placeholder='blur' blurDataURL='/loading.jpg'  optimized  src={each_image} className="object-cover " fill   alt="image could not be found" /> : <video onClick={(e)=>{ vid_ref.pause}} ref={vid_ref} muted autoPlay={true} className="w-full  h-full object-cover"  controls src={each_image}/>}
                       
                     </div>
 
