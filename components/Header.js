@@ -1,4 +1,5 @@
 import React from 'react';
+import { browserName } from 'react-device-detect';
 
 
 import { useRef, useEffect } from 'react';
@@ -9,14 +10,29 @@ import { useRef, useEffect } from 'react';
 
 const Header = () => {
   const lot =  useRef("null")
+
+
+  useEffect(() => {
+  
+  
+    return () => {
+     console.log(browserName)
+    }
+  }, [])
+  
+  
   
   return (
     <div className='relative '>
 
         
          <div className='font-Montserrat text-3xl flex flex-col items-center gap-6 overflow-x-hidden'>
-            <video src={"/assets/just logo animation.webm"} 
-            autoPlay={true} muted={true} className="z-10 " />
+            <video autoPlay={true} muted={true} className="z-10 " >
+                  <source src={"/assets/just logo animation.webm"} ></source>
+                  <source src={"/assets/just logo animation.mov"} ></source>
+             
+             
+              </video>
 
         
                 <h1 className='text-white font-Montserrat text-[2vw] tracking-[1em] hover:tracking-[1.3em] duration-300'>KR8TOS</h1>
@@ -28,8 +44,13 @@ const Header = () => {
          
           </div>
           <video autoPlay={true} loop={true} muted={true} src={"/assets/render waves.webm"} className=" absolute top-[25vw]  lg:top-[20vw] xl:top-[12vw] w-auto  "/>
-
-
+          
+          <video autoPlay={true} muted={true} className="border border-white" >
+             
+                  <source src={"/assets/just logo animation.mov"}  type={"video/mp4"} ></source>
+             
+             
+              </video>
 
     </div>
     

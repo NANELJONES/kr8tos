@@ -12,11 +12,13 @@ const Creative_Studio = () => {
 
   return (
     <div className='mt-10 flex flex-col h-auto mx-auto   ' >
+      
+     
       <div className='relative md:flex md:w-full'>
                 <div className='flex w-full flex-col text-white md:w-2/3 ' >
                           <h4 className='font-Montserrat font-bold tracking-[2vw] text-[5vw] md:text-[1.5vw] md:tracking-[1vw]' >CREATIVE</h4>
                           <h1 className='font-Montserrat font-extrabold text-[12vw] md:text-[5vw] tracking-[2vw] md:tracking-[1.4vw]' >STUDIO</h1>
-                          <p className='border-b-[2vw]  border-[orange]  text-resp text-justify font-Montserrat font-extralight leading-10 hover:leading-[5vw] hover:border-k_red md:leading-[4vw] hover:text-[orange] hover:font-bold md:text-[1.6vw]  md:text-orange duration-500'>As a creative studio, we collaborate with both Digital and Traditional Creatives from diverse fields and disciplines of Creativity to produce Visually compelling Designs right from concept & ideation to product development . Some of our services include Graphics Design, Branding , 3D and CGI, Photography, Animation, Visual Effects, Copy Writing, Music</p>
+                          <p className='border-b-[2vw]  border-[orange]  text-resp text-justify font-Montserrat leading-10 font-extralight md:leading-10 hover:leading-[5vw] hover:border-k_red md:leading-[4vw] hover:text-[orange] hover:font-bold md:text-[1.6vw]  md:text-orange duration-500'>As a creative studio, we collaborate with both Digital and Traditional Creatives from diverse fields and disciplines of Creativity to produce Visually compelling Designs right from concept & ideation to product development . Some of our services include Graphics Design, Branding , 3D and CGI, Photography, Animation, Visual Effects, Copy Writing, Music</p>
                 </div>
                 {/* <div className='rounded-full animate-pulse w-[60px] h-[30px] bg-pink'></div> */}
 

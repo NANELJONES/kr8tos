@@ -171,7 +171,7 @@ const Digital_Marketing = () => {
 
         <h1
          className='w-[75%] mx-auto leading-[8vw] md:leading-[5vw] 
-        cursor-pointer hover:t_shadow hover:leading-[10vw]  
+        cursor-pointer hover:t_shadow hover:leading-[8vw]  
          duration-300  font-light mt-[8vw] text-[6vw] md:text-[4vw]
          md:w-[70%] text-center '>With our amazing packages , we can’t wait to see you through the Journey in achieving your goals and dreams!</h1>
         
