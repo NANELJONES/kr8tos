@@ -58,7 +58,7 @@ useEffect(() => {
 
     
     
-      <Header />
+      {/* <Header /> */}
       <div id="creative_studio">
           <Creative_Studio  />
       </div>
