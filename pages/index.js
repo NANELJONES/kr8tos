@@ -58,7 +58,7 @@ useEffect(() => {
 
     
     
-      {/* <Header /> */}
+      <Header />
       <div id="creative_studio">
           <Creative_Studio  />
       </div>
@@ -73,7 +73,7 @@ useEffect(() => {
     </div>
       
 
-    {/* <Service_Swipe/> */}
+    <Service_Swipe/>
        <Projects/>
 
    
