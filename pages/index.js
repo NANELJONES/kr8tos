@@ -26,16 +26,24 @@ useEffect(() => {
   if(document.readyState ==="complete" ){
     
     setloading(false)
-   }else if(document.readyState==="interactive"){
-    setloading(false)
+    console.log("it is complete and state is set to completed")
    }
 
-   
+  //  window.addEventListener("load", function(){
+  //   setloading(false)
+  //  })
+
+
+ 
+
+   {console.log(document.readyState)}
  
   
 }, [])
+  
 
-  {console.log(loading)}
+{console.log(loading)}
+ 
 
   return (
   <div className="overflow-hidden  relative w-full h-auto px-4 py-0 mx-auto flex flex-col gap-[5vw] lg:px-[5vw] ">

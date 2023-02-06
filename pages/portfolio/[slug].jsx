@@ -30,24 +30,24 @@ const Portfolio = () => {
       return(url.match(/^http[^\?]*.(jpg|jpeg|gif|png|tiff|bmp)(\?(.*))?$/gmi) != null);
   }
 
-  const [scroll_position, setscroll_position] = useState()
+  // const [scroll_position, setscroll_position] = useState()
 
-  const handle_scroll=(event)=>{
+  // const handle_scroll=(event)=>{
 
-    setscroll_position(window.scrollY)
+  //   setscroll_position(window.scrollY)
 
-  }
+  // }
 
 
 
-  useEffect(() => {
-    handle_scroll
-    window.addEventListener("scroll",handle_scroll );
+  // useEffect(() => {
+  //   handle_scroll
+  //   window.addEventListener("scroll",handle_scroll );
   
-    return () => {
-      window.removeEventListener("scroll",handle_scroll)
-    }
-  }, [])
+  //   return () => {
+  //     window.removeEventListener("scroll",handle_scroll)
+  //   }
+  // }, [])
   
  
    useEffect(()=>{
@@ -105,11 +105,16 @@ desc:"As a company, we provide multimedia Production services like Photography, 
 
 
 
+     function display( a){
+      console.log(new_path)
+      console.log(a)
+    }
+
   return (
     
     <div className='h-auto min-h-[110vh] relative '
     style={{
-      backgroundImage: `url(/bg.png)`,
+      backgroundImage: `url(/bg.jpg)`,
       backgroundSize: 'cover',
       backgroundRepeat: 'repeat',
       backgroundPosition: 'center',
@@ -117,22 +122,25 @@ desc:"As a company, we provide multimedia Production services like Photography, 
     }}
     > 
 
-    {modal.show_modal ? <Modal url={modal.url} scroll_position={scroll_position}  onClick={()=>{setmodal( {...modal, show_modal:!modal.show_modal} )}} /> : null} 
+    {modal.show_modal ? <Modal url={modal.url}   onClick={()=>{setmodal( {...modal, show_modal:!modal.show_modal} )}} /> : null} 
    
 
             <div className='font-Montserrat pt-[2vw]  mx-auto text-white flex items-center gap-[3vw] flex-wrap justify-evenly w-full md:w-[80%] lg:w-[60%]' >
                   {var_btns.map((each_btn)=>{
                               return(
 
-                              <Link activeClassName="bg"  href={`/portfolio/${each_btn.slug}`}><button key={var_btns.indexOf(each_btn)   } onClick={()=>{set_desc(each_btn.desc)}}     className={` ${each_btn.slug=== new_path ? "bg-[orange]": "bg-k_blue"}   bg-k_blue mx-auto hover:bg-k_red  duration-300 md:hover:text-[1.1vw] md:hover:font-thin text-center text-[2vw] h-[7vw] w-[20vw] md:max-w-[12vw] lg:text-[0.8vw] lg:max-w-[9vw]   md:h-[4vw] lg:h-[3vw]  text-center font-Monserrat   font-light   md:text-[1.1vw] font-light`} >{each_btn.title}</button></Link>
-                          
+                              <Link activeClassName="bg"  
+                              href={`/portfolio/${each_btn.slug}`}><button key={var_btns.indexOf(each_btn)   } 
+                              onClick={()=>{set_desc(each_btn.desc), display(each_btn.slug) }}  
+                              className={` ${each_btn.slug === new_path ? "bg-[orange]": "bg-k_blue"}   mx-auto   duration-300 md:hover:text-[1.1vw] md:hover:font-thin text-center text-[2vw] h-[7vw] w-[20vw] md:max-w-[12vw] lg:text-[0.8vw] lg:max-w-[12vw]   md:h-[4vw] lg:h-[3vw]  text-center font-Monserrat   font-light   md:text-[1.1vw] font-light`} >{each_btn.title}</button></Link>
+                                  
                               ) 
                             })}
                   </div>
 
-                  <p className='mt-[5vw] md:mt-[2.5vw] font-Montserrat text-white font-light text-center text-[2vw] md:text-[1.5vw] md:w-[60%] lg:text-[1vw] lg:w-[50%] lg:leading-[2.4vw] hover:text-[1.3vw] duration-300  w-[80%] mx-auto leading-[4.5vw] lg:mt-[1.4vw]'>{desc}</p>
+                  <p className='mt-[5vw] md:mt-[2.5vw] font-Montserrat text-white font-light text-center text-[2vw] md:text-[1.5vw] md:w-[60%] lg:text-[1vw] lg:w-[50%] lg:leading-[2.4vw] md:hover:text-[1.3vw] duration-300  w-[80%] mx-auto leading-[4.5vw] lg:mt-[1.4vw]'>{desc}</p>
                   <div className='w-full flex items-center justify-evenly'>
-                  <button className=' text-[2vw] font-Montserrat font-thin text-white text-center  bg-k_red font-thin px-[4vw] py-[2vw] md:text-[0.7vw] md:px-[3em] md:py-[1em] hover:bg-[orange] hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-bold '> HIRE US {">>"} </button>
+                  <button className=' text-[2vw] font-Montserrat font-regular text-white text-center  bg-k_red  px-[4vw] py-[2vw] md:text-[0.7vw] md:px-[3em] md:py-[1em] hover:bg-[orange] hover:text-white hover:px-[3.2em] hover:py-[1.2em] hover:text-1.5xl duration-500 hover:font-bold '> HIRE US {">>"} </button>
                   </div>
              
          

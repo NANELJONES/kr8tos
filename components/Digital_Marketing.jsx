@@ -67,7 +67,7 @@ const Digital_Marketing = () => {
 
         {/* this is where the second div starts from*/}
         <div    style={{
-        backgroundImage: `url(/bg.png)`,
+        backgroundImage: `url(/bg.jpg)`,
         backgroundSize: 'cover',
         backgroundRepeat: 'repeat',
         backgroundPosition: 'center',
