@@ -61,7 +61,7 @@ const Software = () => {
 
 
         <div className='w-full h-[15vw]   flex mt-[10vw] '>
-        <Swiper 
+        {/* <Swiper 
                 slidesPerView={3}
                 pagination={{
                   type:"progressbar",
@@ -83,7 +83,7 @@ const Software = () => {
             <SwiperSlide key={uuidv4()} >
               <li className="flex items-center justify-between text-center  border-[white] h-full text-[3vw] hover:font-extralight hover:text-[5vw] duration-300"  ><p  className='text font-Montserrat  font-regular align-center text-white text-[.8em]  w-full'> {each_service}</p></li></SwiperSlide> 
             ) })}
-        </Swiper>
+        </Swiper> */}
         </div>
           
      
