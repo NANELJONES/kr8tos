@@ -29,7 +29,7 @@ const Header = () => {
          <div className='font-Montserrat text-3xl flex flex-col items-center gap-6 overflow-x-hidden'>
             <video autoPlay={true} muted={true} className="z-10 " >
                   <source src={"/assets/just logo animation.webm"} ></source>
-                  <source src={"/assets/3D LOGIN.mov"} ></source>
+                  <source src={"/3D LOGIN.mov"} ></source>
              
              
               </video>
