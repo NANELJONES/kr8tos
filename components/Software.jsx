@@ -55,7 +55,7 @@ const Software = () => {
         </div>
 
         <div>
-         <Swipe/> 
+         {/* <Swipe/>  */}
         </div>
 
 
