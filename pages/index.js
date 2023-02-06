@@ -29,12 +29,11 @@ useEffect(() => {
     console.log("it is complete and state is set to completed")
    }
 
-  //  window.addEventListener("load", function(){
-  //   setloading(false)
-  //  })
+   window.addEventListener("load", function(){
+    setloading(false)
+   })
 
 
- 
 
    {console.log(document.readyState)}
  
