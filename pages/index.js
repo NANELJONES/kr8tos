@@ -73,7 +73,7 @@ useEffect(() => {
     </div>
       
 
-    <Service_Swipe/>
+    {/* <Service_Swipe/> */}
        <Projects/>
 
    
