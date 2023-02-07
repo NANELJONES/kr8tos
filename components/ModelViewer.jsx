@@ -22,13 +22,12 @@ const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
     <OrbitControls />
   
    </Suspense>
-    {/* <EffectComposer>
-    <DepthOfField focusDistance={0} focalLength={0.09} bokehScale={0.02} height={480} />
+    <EffectComposer>
+   
         <Bloom luminanceThreshold={0.2} luminanceSmoothing={1} height={300} />
-       
-        <Vignette eskil={false} offset={0.4} darkness={0.6} />
 
-    </EffectComposer> */}
+
+    </EffectComposer>
   
 
   </Canvas>
