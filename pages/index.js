@@ -59,12 +59,7 @@ useEffect(() => {
     
     
       <Header />
-      <video autoPlay={true} muted={true} className="z-10 " >
-               
-                  <source src={"/assets/converted logo.mov"} type='video/mov' ></source>
-             
-             
-              </video>
+  
       <div id="creative_studio">
           <Creative_Studio  />
       </div>

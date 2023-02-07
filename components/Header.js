@@ -30,6 +30,8 @@ const Header = () => {
             <video autoPlay={true} muted={true} className="z-10 " >
                   <source src={"/assets/just logo animation.webm"} ></source>
                   <source src={"/assets/converted logo.mov"}  type="video/mp4" ></source>
+                  <source src={"/assets/converted logo.mov"}  type="video/mov" ></source>
+             
              
              
               </video>
@@ -41,7 +43,7 @@ const Header = () => {
                   gap between Creative Content, Software and Marketing for your ideas, Products, Businesses and Services .</p>
                 <button className='text4-[2vw] bg-pink text-white md:font-bold px-[3vw] py-[2vw] md:text-[1vw] md:px-[2em] md:py-[1em] md:hover:bg-pink md:hover:text-white md:hover:px-[3.2em] md:hover:py-[1.2em] md:hover:text-1.5xl duration-500 md:hover:font-bold '> HIRE US {">>"} </button>
                
-         
+                <button className='text4-[2vw] bg-pink text-white md:font-bold px-[3vw] py-[2vw] md:text-[1vw] md:px-[2em] md:py-[1em] md:hover:bg-pink md:hover:text-white md:hover:px-[3.2em] md:hover:py-[1.2em] md:hover:text-1.5xl duration-500 md:hover:font-bold '> NOW {">>"} </button>
           </div>
           <video autoPlay={true} loop={true} muted={true} src={"/assets/render waves.webm"} className=" absolute top-[25vw]  lg:top-[20vw] xl:top-[12vw] w-auto  "/>
 
