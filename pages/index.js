@@ -12,7 +12,7 @@ import Contact from '../components/Contact'
 import { Service_Swipe } from '../components/Service_Swipe'
 import Loader from '../components/Loader'
 import { useState,useEffect } from 'react'
-
+import Video from '../components/Video'
 
 
 
@@ -59,7 +59,7 @@ useEffect(() => {
     
     
       <Header />
-  
+      <Video/>
       <div id="creative_studio">
           <Creative_Studio  />
       </div>
