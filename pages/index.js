@@ -57,7 +57,7 @@ useEffect(() => {
 
 
     
-    <div>
+    <div id="head">
           <Header />
     </div>
       

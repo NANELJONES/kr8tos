@@ -17,7 +17,7 @@ const Nav = () => {
 
         <ul className='w-full flex justify-evenly items-center flex-wrap gap-2 md:gap-5 md:w-[70%] 2xl:w-3/6 duration-300'>
             <li className='w-auto hover:border-l-[1vw] hover:border-[orange] duration-300'>
-                <a href="/" className=' text-resp text-white w-auto hover:text-2xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em] '>Home</a>
+              <Link href="/#head"> <p className=' text-resp text-white w-auto hover:text-2xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em] '>Home</p></Link> 
             </li>
 
             <li className='w-auto hover:border-l-[1vw] hover:border-[orange] duration-300' >
