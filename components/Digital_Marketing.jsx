@@ -87,7 +87,7 @@ const Digital_Marketing = () => {
 
                         {/* Brand Management*/}   
                         <div className='w-[20vw]  animate-[wiggle_2s_ease-in_infinite] delay-20  relative text-center flex items-center h-[20vw] p-[20vw] rounded-full single_marketing flex items-center justify-evenly          ' >
-                                <p className='absolute w-[auto] max-w-[90%] z-30 text-center text-[4vw]  duration-300 ' >Brand Management</p>
+                                <p className='absolute w-full max-w-[90%] z-30 text-center text-[4vw]  duration-300 ' >Brand Management</p>
                                 <div className='w-[18vw]   text-center z-10 inner_market  h-[18vw] p-[20vw] rounded-full  flex items-center justify-evenly'>
                                 </div>
                             </div>
