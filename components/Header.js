@@ -27,8 +27,8 @@ const Header = () => {
 
         
          <div className='font-Montserrat text-3xl flex flex-col items-center gap-6 overflow-x-hidden'>
-            <video autoPlay={true} loop={true} muted={true} className="z-10 w-[1] " >
-            <source src={"/assets/Total Animation.mp4"} ></source>
+            <video autoPlay={true} loop={true} muted={true} className="z-10  h-[60vw] object-cover  sm:aspect-video md:h-[auto]  md:aspect-auto " >
+                   <source src={"/assets/Total Animation.mp4"} ></source>
                 
                   {/* <source src={"/assets/just logo animation.webm"} ></source>
                   <source src={"/assets/safari_logo_animation.mp4"}  type="video/mp4" ></source>
@@ -37,7 +37,7 @@ const Header = () => {
               </video>
 
         
-                <h1 className='text-white font-Montserrat text-[2vw] lg:text-[1vw] tracking-[1em] hover:tracking-[1.3em] duration-300'>KR8TOS</h1>
+                <h1 className='text-white font-Montserrat text-[3vw] lg:text-[1vw] tracking-[1em] hover:tracking-[1.3em] duration-300'>KR8TOS</h1>
                 <p className='text-white font-Montserrat font-extralight w-4/5 text-[3vw] text-center hover:leading-[7vw]   md:hover:leading-[4vw] duration-300  font-light leading-[2em] md:text-[1.5vw] lg:text-[1vw] lg:w-2/5 md:w-1/2 '>We are an international multi-faceted
                  Creative Studios ,Digital Marketing and a Software Development Company geared at delivering high-end Digital Services to bridge the
                   gap between Creative Content, Software and Marketing for your ideas, Products, Businesses and Services .</p>
