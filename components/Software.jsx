@@ -47,7 +47,7 @@ const Software = () => {
             </div>
 
             <div className=' md:w-1/2 md:flex mt-[15vw] md:mt-[0vw]' >
-            {/* <ModelViewer scale="0.7" modelPath={"/3d Models/sci-fi/sci-fi.glb"}/> */}
+            <ModelViewer scale="0.7" modelPath={"/3d Models/sci-fi/sci-fi.glb"}/>
             </div>
 
 
