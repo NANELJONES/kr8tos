@@ -28,9 +28,9 @@ const Header = () => {
         
          <div className='font-Montserrat text-3xl flex flex-col items-center gap-6 overflow-x-hidden'>
             <video autoPlay={true} loop={true} muted={true} className="z-10  h-[60vw] object-cover  sm:aspect-video md:h-[auto]  md:aspect-auto " >
-                   <source src={"/assets/animation.mp4"} ></source>
-                    {/* <source src={"/assets/animation_1.mp4"} ></source> */}
-                     <source src={"/assets/animation ios.mov" } ></source>
+                   <source src={"/assets/animation.mp4" } type="video/mp4" ></source>
+                   
+                     <source src={"/assets/animation ios.mov" } type="video/mov" ></source>
                   {/* <source src={"/assets/just logo animation.webm"} ></source>
                   <source src={"/assets/safari_logo_animation.mp4"}  type="video/mp4" ></source>
                    */}
