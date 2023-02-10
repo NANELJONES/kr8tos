@@ -23,25 +23,28 @@ export default function Home() {
 
 
 useEffect(() => {
-  if(document.readyState ==="complete" ){
+  setTimeout(()=>{
+    setloading(false)
+  },  3000)
+  // if(document.readyState ==="complete" ){
     
-    setloading(false)
-    console.log("it is complete and state is set to completed")
-   }
+  //   setloading(false)
+  //   console.log("it is complete and state is set to completed")
+  //  }
 
-   window.addEventListener("load", function(){
-    setloading(false)
-   })
+  //  window.addEventListener("load", function(){
+  //   setloading(false)
+  //  })
 
 
 
-   {console.log(document.readyState)}
+
  
   
 }, [])
   
 
-{console.log(loading)}
+
  
 
   return (
