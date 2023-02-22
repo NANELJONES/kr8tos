@@ -40,8 +40,8 @@ const Software = () => {
         <div className='text-white mt-[7vw] lg:mt-[2vw] font-Montserrat font-bold  md:flex '>
             <div className='md:w-1/2  relative   '>
                     
-                    <h2 className=' text-center md:text-left text-white font-Montserrat text-[2vw] 2xl:text-[40px] font-light '>{"<"}SOFTWARE{"/>"}</h2>
-                    <h2 className=' md:w-full md:text-[4vw] text-center md:text-left  font-light 2xl:text-[80px] '>DEVELOPMENT</h2>
+                    <h2 className=' text-[7vw] md:text-[4vw] text-center md:text-left text-white font-Montserrat text-[2vw] 2xl:text-[40px] font-light '>{"<"}SOFTWARE{"/>"}</h2>
+                    <h2 className='text-[10vw]  md:w-full md:text-[4vw] text-center md:text-left  font-light 2xl:text-[80px] '>DEVELOPMENT</h2>
                     <p className='text-[3vw] 2xl:text-[15px] w-[100%]   2xl:leading-[3em] text-center font-Montserrat  font-light md:hover:leading-[-1vw] hover:tracking-[.01em] duration-700 md:w-[90%]  text-center   leading-[10vw]   md:text-[1.1vw] md:w-full md:tracking-[.02em] md:w-[70%] text-left  md:leading-[3vw] md:text-left '>We develop highly optimized and maintainable solutions that match our clients' business goals, utilizing the recent technologies, processes, tools, and best of Engineers, Programmers and Developers to the fullest extent possible. </p>  
 
 
@@ -49,15 +49,12 @@ const Software = () => {
 
 
 
-                    
-                 
-                    <Link href="/portfolio/Software Development">
-                        <button type="button"
-                            className="inline-block  bg-[white] px-6 pt-2.5 pb-2 text-xs font-light uppercase leading-normal text-[rgb(0,0,0)] shadow-[0_4px_9px_-4px_#3b71ca] transition duration-700 ease-in-out  hover:bg-[orange] hover:text-[white]"> EXOLORE MORE{">>"} </button>
-                          
-                    
-                    </Link>
+                    <div className='w-full  flex item-center flex-row justify-evenly md:items-start md:justify-between md:items-start '>
+                               <Link href="/portfolio/Software Development">  <button type="button"  className="inline-block   bg-[white]   px-6 md:px-4 pt-2.5 pb-2 text-[1.5vw] md:text-[0.8vw] font-light uppercase leading-normal text-[rgb(0,0,0)] shadow-[0_4px_9px_-4px_#3b71ca] transition duration-700 ease-in-out  hover:bg-[orange] hover:text-[white]"> EXOLORE MORE{">>"} </button>     </Link>
                   
+                    </div>
+                 
+               
                  
 
                    

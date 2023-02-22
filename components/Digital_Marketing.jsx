@@ -7,11 +7,8 @@ import { FaBeer } from 'react-icons/fa';
 
 const Digital_Marketing = () => {
   return (
-    <div className='relative  text-white font-Montserrat mt-[-3vw]   '>
+    <div className='relative  text-white font-Montserrat mt-[3vw] 2xl:mt-[10px]   '>
      
-   
-   
-   
     <div className='w-full h-auto md:flex  md:items-center ' >
         
         
@@ -34,7 +31,7 @@ const Digital_Marketing = () => {
          <div className='mt-[10vw] md:mt-[5vw] 2xl:mt-[100px]  flex flex-col gap-[5vw] 2xl:gap-[100px]'>
                     <div className='w-auto  ' >
                                     <div className='flex  items-center gap-[2vw] 2xl:gap-[10px] '>
-                                        <FaBeer/>
+                                        <div className='w-[2vw] h-[2vw] animate-pulse border max-w-[40px] max-h-[40px]   animate-spin-slow '></div>
                                         <h2 className='px-[3vw]  duration-300 md:px-[1.5vw] 2xl:px-[20px] text-[3vw] md:text-[2vw]  md:border-l-[1.5vw] border-[orange] lg:text-[1vw] border-l-[2vw] lg:border-l-[1vw] 2xl:border-l-[15px]   2xl:text-[23px] w-2/3 md:w-full text-justify font-bold '>The surge in the use and dependence on digital marketing as a point of communication amongst service providers and their clients has undoubtedly become the new norm. </h2>
 
                                     </div>
@@ -42,7 +39,7 @@ const Digital_Marketing = () => {
 
                     <div className='w-auto mx-[10vw]   md:mx-[4vw] md:w-100% 2xl:mx-[50px]  ' >
                                     <div className='flex  items-center gap-[2vw] 2xl:gap-[10px] '>
-                                        <FaBeer/>
+                                    <div className='w-[2vw] h-[2vw] animate-pulse border max-w-[40px] max-h-[40px]   animate-spin-slow '></div>
                                         <h2 className='px-[3vw]  duration-300 md:px-[1.5vw] 2xl:px-[20px] text-[3vw] md:text-[1.8vw]  md:border-l-[1.5vw] border-[orange] lg:text-[1vw] border-l-[2vw] lg:border-l-[1vw] 2xl:border-l-[15px]   2xl:text-[18px] w-2/3 md:w-full text-justify font-thin '>KRATOS provides a platform that helps to manage and direct decisions on the proper utilization of  the digital marketing  space aimed at increasing growth rates of companies, based on individual institutional goals.</h2>
 
                                     </div>
@@ -132,9 +129,10 @@ const Digital_Marketing = () => {
 
                                 {/* Affiliate Marketing*/}   
                               
-                                <div className='w-[20vw]  h-[20vw] md:w-auto     p-[20vw] md:p-[17vw]  animate-[wiggle1_4s_ease-in_infinite] delay-400  relative text-center flex items-center  rounded-full single_marketing flex items-center justify-evenly  lg:p-[9vw] lg:w-[9vw] lg:h-[9vw]    ' >
-                                        <p className='absolute w-[50%] z-30 text-center text-[4vw] md:text-[1.6vw]  duration-300  ' >Affiliate Marketing</p>
-                                        <div className='w-[18vw]  h-[18vw]   text-center z-10 inner_market p-[20vw] md:p-[15vw] rounded-full  flex items-center justify-evenly lg:p-[9vw] lg:w-[9vw] lg:h-[9vw]'>
+                                <div className='w-[20vw]  h-[20vw]    p-[20vw]  animate-[wiggle1_4s_ease-in_infinite] delay-400  relative text-center flex items-center  rounded-full single_marketing flex items-center justify-evenly  lg:p-[9vw] lg:w-[9vw] lg:h-[9vw]    ' >
+                                        <p className='absolute w-[50%] z-30 text-center text-[4vw]  duration-300 lg:text-[1.5vw] ' >Affiliate Marketing</p>
+                                       
+                                        <div className='w-[18vw]  h-[18vw]   text-center z-10 inner_market p-[20vw] rounded-full  flex items-center justify-evenly lg:p-[9vw] lg:w-[9vw] lg:h-[9vw]'>
                                         
                                         </div>
 

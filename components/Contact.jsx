@@ -134,7 +134,7 @@ const Contact = () => {
              <div className='w-[60%] h-[0.1em] bg-white mt-[2vw]  md:mt-[0.5vw] '></div>
               
                 <div className={`${more_info === true ? "hidden" : "flex flex-col gap-[1vw] md:gap-[0.5vw]"} pt-[1.2vw] mt-[2vw] md:mt-[0.1vw] `}>
-                        <label className='2xl:text-[1em] font-light text-[3.5vw] md:text-[90%]'> Information:  <br/>(Any other contact information we can reach you on.)</label>    
+                        <label className=' 2xl:text-[1em] font-light text-[0.8em] md:text-[90%]'> Information:  <br/>(Any other contact information we can reach you on.)</label>    
                         <input
                            value={contact.user_extra_info}
                            onChange={(event)=>{
@@ -142,7 +142,7 @@ const Contact = () => {
                         }} 
                         placeholder='eg. phone number, @instagram, @whatsapp, @telegram etc'
                           type="text"
-                         className=' more_info text-[0.9em] rouded-full bg-[transparent]  focus:bg-socials_bg  duration-300 border-b-2 px-[1vw]  rounded-[0.1em]  w-[95%] h-[7vw] md:h-[4vw]  max-h-[60px]  '/> 
+                         className=' more_info text-[0.9em] h-[12vw] rouded-full bg-[transparent]  focus:bg-socials_bg  duration-300 border-b-2 px-[1vw]  rounded-[0.1em]  w-[95%] h-[7vw] md:h-[4vw] md:text-[0.8em]  max-h-[60px]  '/> 
                     
                 </div>
 
