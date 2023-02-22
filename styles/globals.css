@@ -4,7 +4,9 @@
 
 @layer utilities{
 
-  
+  .unset {
+    all:unset;
+  }
 
   .loader  {
     animation: rotate 1s infinite;  
@@ -82,6 +84,13 @@
 
 
 
+  .circle_box{
+    background: rgb(17,103,107);
+    background: linear-gradient(100deg, rgba(17,103,107,1) 0%, rgba(176,19,89,1) 44%, rgba(36,50,221,1) 100%);
+    filter: blur(4rem);
+
+  }
+
 
   .line_grad{
    background: linear-gradient(173.44deg, #FFFFFF -44.27%, rgba(255, 255, 255, 0) 97.29%, rgba(255, 255, 255, 0) 97.29%);
@@ -105,11 +114,18 @@
 
     }
 
+ 
+
     .single_marketing_seo:hover p{
      
       font-size: 3.5vw;
       width:100%;
 
+    }
+
+    .bullet{
+      width:20px;
+      height: 20px;
     }
 
     .normal_gradient{
@@ -172,17 +188,27 @@ filter: drop-shadow(2.24484px 6.73452px 10.1018px rgba(0, 0, 0, 0.25));
 
  
 
-@media  (min-width:769px) {
+@media  (min-width:1024px) {
+
   .single_marketing:hover p{
      
-    font-size: 4.2vw;
-    width:90%;
-    min-width:50%;
+    font-size: 2vw;
+    font-weight:medium;
+    width:100%;
 
   }
+
+  .single_marketing_seo:hover p{
+   
+    font-size: 2.2vw;
+    width:100%;
+
+  } 
+
+
 }
 
-  
+
 
 }
 
@@ -193,7 +219,9 @@ filter: drop-shadow(2.24484px 6.73452px 10.1018px rgba(0, 0, 0, 0.25));
     scroll-behavior: smooth;
   }
 
-  
+  .more_info:focus{
+    outline: none;
+  }
 
 }
 

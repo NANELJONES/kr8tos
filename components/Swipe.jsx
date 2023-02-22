@@ -30,7 +30,7 @@ const Swipe = () => {
 
   return (
     
-    <div className='relative text-white h-auto w-full flex   items-center justify-between mt-[10vw]  ' >
+    <div className='relative text-white h-auto w-full flex items-center justify-between mt-[10vw] xl:mt-[2vw]  ' >
                   
                   <button ref={next_btn} className='w-20 text-center h-20 rounded-full  border-s_red border-4 hover:bg-background font-Montserrat duration-300 flex items-center justify-evenly rounded-full text-white text-resp z-[10]  absolute right-0'>{">"}</button>
                   
@@ -62,7 +62,7 @@ const Swipe = () => {
     }}
 
      spaceBetween={2}
-    slidesPerView={3}
+    slidesPerView={5}
     pagination={{clickable:true}}
     modules={[Pagination,EffectCoverflow, Navigation]}
     className="mySwiper"
@@ -74,7 +74,7 @@ const Swipe = () => {
         return(
           <SwiperSlide key={uuidv4()}  >
           {({isActive}) =>{       
-                return  <div   className={`relative   w-[60vw] h-[80vw]  drop-shadow-lg    duration-500 rounded-2xl    md:w-[30vw] md:h-[40vw]`}>  
+                return  <div   className={`relative   w-[40vw] h-[50vw]  drop-shadow-lg    duration-500 rounded-2xl max-w-[400px] max-h-[500px]   md:w-[30vw] md:h-[40vw] xl:w-[23vw] xl:h-[30vw]`}>  
                  <Image src={each_image} fill className="object-cover rounded-2xl"  />
                  
                  </div> 

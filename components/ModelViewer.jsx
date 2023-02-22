@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { EffectComposer, DepthOfField, Bloom, Noise, Vignette } from '@react-three/postprocessing'
+
 import { OrbitControls, Environment } from "@react-three/drei";
 import Model from "./Model";
 
@@ -11,7 +11,7 @@ const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
   
 
   return (
-    <div className="h-[50vw] w-full">
+    <div className="h-[50vw] w-full max-h-[600px]">
           <Canvas>
     <ambientLight intensity={8} />
     <spotLight position={[10, 10, 10]} angle={2} intensity={6}   penumbra={1} />
@@ -22,13 +22,7 @@ const ModelViewer = ({ modelPath, scale = 40, position = [0, 0, 0] }) => {
     <OrbitControls />
   
    </Suspense>
-    <EffectComposer>
-   
-        <Bloom luminanceThreshold={0.2} luminanceSmoothing={1} height={300} />
 
-
-    </EffectComposer>
-  
 
   </Canvas>
       

@@ -33,15 +33,15 @@ const Projects = () => {
 
 
     
-    <div className='flex font-Montserrat flex-col items-center  text-[10vw] text-[white]'>
+    <div className='flex    font-Montserrat flex-col items-center  text-[10vw] text-[white] '>
 
-    <h2 className='font-bold text-white text-[5vw] md:text-[2.5vw] md:w-[20%] w-[50%] text-center'>PROJECTS & CLIENTS </h2>
-  <div className=' grid grid-cols-4 gap-4 mt-[3vw] duration-700'>
+    <h2 className='font-bold text-white text-[5vw] md:text-[2.5vw] md:w-[20%] w-[50%] text-center 2xl:text-[45px]'>PROJECTS & CLIENTS </h2>
+  <div className=' border-t-[1vw] border-[orange] pt-[1vw] grid grid-cols-4 gap-4 mt-[3vw] duration-700'>
             {sci_image.map((each) =>{
 
             return(
             <div key={each} className="hover:scale-110 duration-300 relative w-[20vw] h-[25vw] max-w-[300px] max-h-[350px]">
-                     <Image src={each} optimized fill className="object-cover "  />
+                     <Image src={each}  fill className="object-cover "  />
                  
 
             </div>

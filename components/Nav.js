@@ -20,6 +20,10 @@ const Nav = () => {
               <Link href="/#head"> <p className=' text-resp text-white w-auto hover:text-2xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em] '>Home</p></Link> 
             </li>
 
+            <li className='w-auto hover:border-l-[1vw] hover:border-[orange] duration-300'>
+           <Link href={`/portfolio/${"Design"}`}> <p className='text-resp text-white w-auto hover:text-3xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em]'>Portfolio</p></Link> 
+            </li>
+
             <li className='w-auto hover:border-l-[1vw] hover:border-[orange] duration-300' >
             <Link  href={"/#creative_studio"} scroll={true}> <p  className='text-resp text-white w-auto hover:text-3xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em]'>Creative Studio</p></Link>  
             </li>
@@ -35,9 +39,7 @@ const Nav = () => {
             <li className='w-auto hover:border-l-[1vw] hover:border-[orange] duration-300'>
             <Link href={"/#contact"} scroll={true}> <p  className='text-resp text-white w-auto hover:text-3xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em]'>Contact Us</p></Link>
             </li>
-            <li className='w-auto hover:border-l-[1vw] hover:border-[orange] duration-300'>
-           <Link href={`/portfolio/${"Design"}`}> <p className='text-resp text-white w-auto hover:text-3xl hover:font-bold duration-500 font-thin font-Montserrat md:text-resp2 lg:text-[1em]'>Portfolio</p></Link> 
-            </li>
+
 
         </ul>
 

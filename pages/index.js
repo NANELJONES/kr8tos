@@ -19,13 +19,19 @@ import { useState,useEffect } from 'react'
 export default function Home() {
 
   const  [loading, setloading] = useState(true)
+  const [mousePos, setMousePos] = useState({});
+  
+  const [scroll_position, setscroll_position] = useState({})
+
+ 
+
 
 
 
 useEffect(() => {
   setTimeout(()=>{
     setloading(false)
-  },  3000)
+  },  1200)
   // if(document.readyState ==="complete" ){
     
   //   setloading(false)
@@ -36,19 +42,69 @@ useEffect(() => {
   //   setloading(false)
   //  })
 
+  
+
+  // const handleMouseMove = (event) => {
+  //   setMousePos({ x: event.clientX, y: event.clientY });
+  // };
+
+  // const handle_scroll=(event)=>{
+
+  //   setscroll_position({x:window.scrollX , y:window.scrollY})
+
+  // }
+
+
+  // window.addEventListener("scroll",handle_scroll );
+  // window.addEventListener('mousemove', handleMouseMove);
+  
+  
+  // return () => {
+  //   window.removeEventListener(
+  //     'mousemove',
+  //     handleMouseMove
+  //   );
+
+  //   window.removeEventListener("scroll",handle_scroll)
+   
+  // };
+
 
 
 
  
   
 }, [])
-  
+
+
+
 
 
  
 
   return (
-  <div className="overflow-hidden  relative w-full h-auto px-4 py-0 mx-auto flex flex-col gap-[5vw] lg:px-[5vw] ">
+  <div
+  // style={{
+  //   backgroundImage: `url("/bg.jpg")`,
+  //   backgroundSize: 'cover',
+  //   backgroundRepeat: 'repeat',
+  //   backgroundPosition: 'center',
+    
+  // }} 
+  className="overflow-hidden   relative w-full h-auto px-4 py-0 mx-auto flex flex-col gap-[3vw] lg:px-[5vw]  max-w-[1600px]">
+            {/* <div
+      style={{
+      position:"absolute",
+      left:`${(mousePos.x + scroll_position.x)-300 }px`,
+      top:`${(mousePos.y + scroll_position.y)-300}px`  ,
+      
+      
+    }}
+      className={` opacity-[0.8]  w-[45vw] h-[45vw] circle_box rounded-full z-[-200] `}> 
+      
+       </div>
+  */}
+      
       <Head>
         <title>kr8tos.com</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -63,11 +119,14 @@ useEffect(() => {
     <div id="head">
           <Header />
     </div>
+    
       
- 
+
+
       <div id="creative_studio">
           <Creative_Studio  />
       </div>
+    
        
        <div id="software">
           <Software/>

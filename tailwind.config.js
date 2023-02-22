@@ -5,7 +5,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    
+
     extend: {
 
       animation:{
@@ -88,6 +88,7 @@ module.exports = {
       s_red:"#FF725E",
       k_red:"#D82C5F",
       k_blue:"#573967",
+      socials_bg:"rgba(255, 255 , 250 ,0.1)",
 
       marketing_outline:" linear-gradient(160.4deg, #4E6CF6 13.13%, #EA2382 116.14%);"
 

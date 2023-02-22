@@ -4,7 +4,7 @@ import {getStorage} from "@firebase/storage"
 
 
 const firebaseConfig = {
-    apiKey: "AIzaSyArAgXXpBlVTQuvP5acNWFi7of6AicBtzY",
+    apiKey: process.env.API,
     authDomain: "peepandlearn-f50e4.firebaseapp.com",
     projectId: "peepandlearn-f50e4",
     storageBucket: "peepandlearn-f50e4.appspot.com",
