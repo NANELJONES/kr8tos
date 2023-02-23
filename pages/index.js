@@ -31,7 +31,7 @@ export default function Home() {
 useEffect(() => {
   setTimeout(()=>{
     setloading(false)
-  },  1200)
+  },  1000)
   // if(document.readyState ==="complete" ){
     
   //   setloading(false)
@@ -106,7 +106,7 @@ useEffect(() => {
   */}
       
       <Head>
-        <title>kr8tos.com</title>
+        <title>kr8tos.vercel.app</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin= "true"/>
         <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&family=Petit+Formal+Script&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
