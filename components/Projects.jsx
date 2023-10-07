@@ -41,7 +41,7 @@ const Projects = () => {
 
             return(
             <div key={each} className="hover:scale-110 duration-300 relative w-[20vw] h-[25vw] max-w-[300px] max-h-[350px]">
-                     <Image src={each}  fill className="object-cover "  />
+                    
                  
 
             </div>

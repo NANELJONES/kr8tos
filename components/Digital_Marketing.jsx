@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image';
 
 
-import { FaBeer } from 'react-icons/fa';
 
 
 const Digital_Marketing = () => {
