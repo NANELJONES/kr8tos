@@ -9,6 +9,7 @@
     "port": "30002"
   },
   "dependencies": {
+    "@fortawesome/react-fontawesome": "github:fortawesome/react-fontawesome",
     "@react-three/drei": "^9.56.7",
     "@react-three/fiber": "^8.10.1",
     "@react-three/postprocessing": "^2.7.0",

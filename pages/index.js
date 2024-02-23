@@ -12,7 +12,7 @@ import Contact from "../components/Contact";
 import { Service_Swipe } from "../components/Service_Swipe";
 import Loader from "../components/Loader";
 import { useState, useEffect } from "react";
-
+import Footer from "../components/Footer";
 export default function Home() {
   const [loading, setloading] = useState(true);
   const [mousePos, setMousePos] = useState({});
@@ -118,6 +118,8 @@ export default function Home() {
       <div id="contact">
         <Contact />
       </div>
+
+      <Footer></Footer>
     </div>
   );
 }

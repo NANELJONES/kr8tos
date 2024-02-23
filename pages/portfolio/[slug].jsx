@@ -9,6 +9,7 @@ import { async } from "@firebase/util";
 import Modal from "../../components/Modal";
 import { v4 as uuidv4 } from "uuid";
 import { useRef } from "react";
+import Skeleton from "../../components/Skeleton";
 
 const Portfolio = () => {
   const vid_ref = useRef("");
@@ -22,6 +23,7 @@ const Portfolio = () => {
   const new_path = routes.query.slug;
 
   const [modal, setmodal] = useState({ show_modal: false, url: "" });
+  const [loading, set_loading] = useState(true);
 
   const isImgLink = (url) => {
     if (typeof url !== "string") return false;
@@ -56,6 +58,7 @@ const Portfolio = () => {
         res.items.forEach((itemRef) => {
           getDownloadURL(ref(storage, itemRef.fullPath)).then((url) => {
             setall_images((all_images) => [...all_images, url]);
+            set_loading(false);
           });
         });
       })
@@ -93,6 +96,11 @@ const Portfolio = () => {
       title: "Media Production",
       slug: "Media_Production",
       desc: "As a company, we provide multimedia Production services like Photography, Videography, Visual Effects, Voice Overs, Music Production, etc.",
+    },
+    {
+      title: "Product Shoot",
+      slug: "Product_Shoot",
+      desc: "We shoot all forms of products photography and videography.Ranging from in-studio shoots to CGI product ads.",
     },
   ];
 
@@ -144,7 +152,7 @@ const Portfolio = () => {
         })}
       </div>
 
-      <p className="mt-[5vw] md:mt-[2.5vw] font-Montserrat text-white font-light text-center text-[3vw] md:text-[1.5vw] md:w-[60%] lg:text-[1vw] lg:w-[50%] lg:leading-[2.4vw]  duration-300  w-[80%] mx-auto leading-[4.5vw] lg:mt-[1.4vw]">
+      <p className="mt-[5vw] md:mt-[2.5vw] font-Montserrat text-white font-light text-center text-[2vw] md:text-[1.2vw] md:w-[60%] lg:text-[0.8vw] lg:w-[50%] lg:leading-[2.4vw]  duration-300  w-[80%] mx-auto leading-[4.5vw] lg:mt-[1.4vw]">
         {desc}
       </p>
       <div className="w-full flex items-center justify-evenly">
@@ -154,48 +162,55 @@ const Portfolio = () => {
         </button>
       </div>
 
-      <div className=" mt-[3vw]  flex items-baseline flex-wrap gap-[1vw] h-auto  border-white md:w-auto mx-auto">
-        {all_images &&
-          all_images.map((each_image) => {
-            return (
-              <div
-                onClick={() => {
-                  setmodal({
-                    ...modal,
-                    show_modal: !modal.show_modal,
-                    url: each_image,
-                  });
-                }}
-                key={uuidv4()}
-                className="relative text-white w-[30%] h-[40vw] cursor-pointer mx-auto  hover:scale-125 hover:z-[10] duration-300  md:w-[30%] md:h-[40vw]  object-cover  max-h-[300px] max-w-[200px] "
-              >
-                {isImgLink(each_image) ? (
-                  <Image
-                    placeholder="blur"
-                    blurDataURL="/loading.jpg"
-                    lazy
-                    src={each_image}
-                    className="object-cover "
-                    fill
-                    alt="/blur"
-                  />
-                ) : (
-                  <video
-                    onClick={(e) => {
-                      vid_ref.pause;
+      {loading ? (
+        <Skeleton />
+      ) : (
+        <>
+          {" "}
+          <div className=" mt-[3vw]  flex items-baseline flex-wrap gap-[1vw] h-auto  border-white md:w-auto mx-auto">
+            {all_images &&
+              all_images.map((each_image) => {
+                return (
+                  <div
+                    onClick={() => {
+                      setmodal({
+                        ...modal,
+                        show_modal: !modal.show_modal,
+                        url: each_image,
+                      });
                     }}
-                    ref={vid_ref}
-                    muted
-                    autoPlay={true}
-                    className="w-full  h-full object-cover"
-                    controls
-                    src={each_image}
-                  />
-                )}
-              </div>
-            );
-          })}
-      </div>
+                    key={uuidv4()}
+                    className="relative text-white w-[30%] h-[40vw] cursor-pointer mx-auto  hover:scale-125 hover:z-[10] duration-300  md:w-[30%] md:h-[40vw]  object-cover  max-h-[300px] max-w-[200px] "
+                  >
+                    {isImgLink(each_image) ? (
+                      <Image
+                        placeholder="blur"
+                        blurDataURL="/loading.jpg"
+                        lazy
+                        src={each_image}
+                        className="object-cover "
+                        fill
+                        alt="/blur"
+                      />
+                    ) : (
+                      <video
+                        onClick={(e) => {
+                          vid_ref.pause;
+                        }}
+                        ref={vid_ref}
+                        muted
+                        autoPlay={true}
+                        className="w-full  h-full object-cover"
+                        controls
+                        src={each_image}
+                      />
+                    )}
+                  </div>
+                );
+              })}
+          </div>
+        </>
+      )}
     </div>
   );
 };

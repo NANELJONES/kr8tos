@@ -78,14 +78,16 @@ const Contact = () => {
         CONNECT WITH US
       </p>
       <div className="flex mt-[4vw]">
-        <div className="w-1/2  hidden  md:flex relative ">
-          <Image
-            src={"/assets/LOGO 4.png"}
-            className="object-cover"
-            fill
-            unoptimized
-            alt="image could not be found"
-          />
+        <div className="w-1/2  hidden   md:flex relative ">
+          <div className="relative w-full  max-h-[1000px] flex flex-columns items-center justify-around ">
+            <Image
+              src={"/assets/LOGO 4.png"}
+              className="object-contain"
+              fill
+              unoptimized
+              alt="image could not be found"
+            />
+          </div>
         </div>
 
         <form className="w-full  md:w-1/2 flex flex-col gap-[4vw] md:gap-[1vw] 2xl:gap-[30px] ">
